@@ -33,7 +33,9 @@
             larger homes for families. This motivated me to look into whether
             this is common in Massachusetts, too where people other than 65 tend
             to live in areas with a higher percentage of single-family home
-            zoning
+            zoning. I feel like this could be the case since older people may
+            have more money to afford single-family homes and they may want more
+            space for their families.
           </p>
           <li>
             Do people of color or people with low incomes live in areas with a
@@ -45,7 +47,11 @@
             implicit strategy to price people of color and low-income people out
             of certain neighborhoods.” This makes me wonder if neighborhoods
             with a higher percentage of single-family housing end up having
-            fewer people of color and people with lower incomes.
+            fewer people of color and people with lower incomes. I feel like
+            this could be the case since single-family homes are more expensive
+            and people may not be able to afford them, so they may end up living
+            in areas with more cheaper multi-family housing options which may
+            have a lower percentage of single-family homes.
           </p>
           <li>
             Do areas with a lower percentage of single-family homes have a
@@ -57,7 +63,9 @@
             single-family-only zones, there can be more housing options for
             people. This makes me wonder if there is a correlation between the
             percentage of single-family housing and the number of people living
-            there.
+            there. I feel like there could be a correlation since areas with
+            more single-family homes may have fewer people living there since
+            they are more expensive and there is less options.
           </p>
         </ol>
       </section>
@@ -67,13 +75,127 @@
 
         <figure>
           <img
+            src="../images/assn2_graphs/sing_percent_muni.png"
+            alt=""
+            width="380"
+          />
+          <figcaption>
+            Percentage of single-family homes by Municipality [For Initial
+            Exploration]
+            <br />This was an initial exploration to understand the data a bit
+            more. Through this I realized some values is over 100%. I digged
+            into the dataset a bit more and found that municipalities were split
+            into 2 geographic records depending on whether the land was zoned
+            only for single-family housing or for other housing types. This made
+            me realized the importance of using the unique fid to explore this
+            dataset rather than just the municipality name since some
+            municipalities had multiple records.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="../images/assn2_graphs/sing_pop_combined.png"
+            alt=""
+            width="380"
+          />
+          <figcaption>
+            Population Age Groups by Percentage of Single-Family Housing
+            (Stacked Bar) [For Q1]
+            <br />
+            This was one of my first attempts to answer question 1. I did a
+            stacked graph because I wanted to see any clear trends instead of
+            just individual data points, and I feel like as I was exploring I
+            generally turn to just scatter plot of data points and I wanted to
+            try exploring different visualizations instead.
+            <br />This stacked bar chart compares the number of residents under
+            18, ages 18–64, and ages 65+ based on the percentage of
+            single-family housing. This visualization showed me that most places
+            have more 18-64 people, and the places that have more older people
+            usually have more than 50% of single-family homes. It also clearly
+            shows places generally don't have 20–30% or 45–50% single-family
+            housing.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="../images/assn2_graphs/sing_percent.png"
+            alt=""
+            width="380"
+          />
+          <figcaption>
+            Population Age Groups by Percentage of Single-Family Housing
+            (Scatter Plot) [For Q1]
+            <br />
+            I end up using a scatter plot for question 1 because I feel like
+            this does the best job of showing general trends in the data while
+            still showing each individual municipality's data point. I also
+            switch from just looking at the number to the percentage of people
+            in each age group. I think this helps with having a better
+            understanding of the composition in each municipality and not having
+            the size of the municipality affect whether a lot of older people
+            live there or not. This shows that places generally all have the
+            same percentage of people under 18, no matter the % of single-family
+            homes. Places with around 80-90% have more 18-64 working class which
+            makes sense since they may want places with more diversity and
+            options. It looks like areas with more than 20% of people over 65
+            generally have more than 50% of single-family homes, although some
+            do have 0%.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="../images/assn2_graphs/sing_over_65_percent.PNG"
+            alt=""
+            width="380"
+          />
+          <figcaption>
+            Percentage of People Over 65 vs. Percentage of Single-Family Housing
+            [For Q1]
+            <br />
+            In this visualization, I did a more detailed visualization of just
+            people over 65. Because if my question was if a higher percentage of
+            old people in an area with more single-family, I can just focus on
+            this percentage. Through more inspection, there's one point
+            (Medford) with around 55% of single-family but a high percentage of
+            people over 65. However, after digging through the data metadata, I
+            found that this is one of the two areas. This one represents the
+            area Medford that is not only-single-family, and it only has a
+            population of 3 (2 of which is over 65), so I think that data point
+            is an outlier. The other potential outlier is the one with 41%
+            single-family homes and 55% of older people. That one was Quincy,
+            which is part of Greater Boston. I wonder if this one also makes
+            sense, as it is made of older people who want to live around Boston,
+            but since it is very busy and city-like, they may choose to move
+            somewhere else that has a bit more single-family homes but not too
+            far from Boston.
+          </figcaption>
+        </figure>
+        <figure>
+          <img
             src="../images/assn2_graphs/older_vs_sing_fam_%25.png"
             alt=""
             width="380"
           />
           <figcaption>
-            Percentage of single-family homes vs. percentage of residents 65 and
-            older
+            Population of People Over 65 vs. Percentage of Single-Family Housing
+            [For Q1]
+            <br />
+            In this visualization, instead of the general percentage, I wanted
+            to look at the pure number of people older than 65. I used the
+            population of the area as the coloring so people can still get a
+            sense of an area is just very small, and that's why they may have
+            fewer people. This was interesting because this reveals that places
+            with a higher percentage of single families do generally have more
+            older people or a smaller population. Areas with 0 percent of
+            single-family are generally under 200 people over 65. While the
+            areas that have more than 200 people over 65 have more than 50% of
+            single-family housing. There is one outlier with 0 percent single
+            family and over 300 people over 65. However, I found out that it’s
+            Boston, so it makes sense that it has both a high general population
+            and thus more people who will be over 65.
           </figcaption>
         </figure>
 
@@ -84,8 +206,18 @@
             width="380"
           />
           <figcaption>
-            Percentage of single-family homes vs. percentage of residents of
-            color in areas with less than 50% single-family homes
+            Black or African American Population and Households with Income
+            under $10000 in Areas with Less than 50% of Single Family Homes [For
+            Q2]
+
+            <br />
+            I wanted to try exploring the filtering option with these next 2
+            figures. In this one I filter for areas with less than 50%
+            single-family homes. In areas with fewer single-family homes, I
+            found that there is generally more spread of the number of people
+            with low income from 0 to almost 200. The number of African
+            Americans also looks pretty diverse, though, across all
+            municipalities. 
           </figcaption>
         </figure>
 
@@ -96,20 +228,115 @@
             width="380"
           />
           <figcaption>
-            Percentage of single-family homes vs. percentage of residents of
-            color in areas with more than 50% single-family homes
+            Black or African American Population and Households with Income
+            under $10000 in Areas with More than 50% of Single Family Homes [For
+            Q2]
+            <br />
+            I filter for areas with more than 50% single-family homes in this
+            visualization. In these areas, it looks like there are generally
+            fewer people with low income (mostly under 75). The spread of the
+            number of African Americans is really similar, though. There is an
+            area (Randolph) with a lot of African Americans, and I couldn't
+            think of why even with additional research. In general, this is
+            surprising because I would have expected a clearer difference if a
+            higher percentage of single-family home zoning was actually charging
+            people out of those areas.
           </figcaption>
         </figure>
 
         <figure>
-          <p>Population vs. Single-Family Homes</p>
+          <img
+            src="../images/assn2_graphs/race_income_w_outliers.png"
+            alt=""
+            width="380"
+          />
+          <figcaption>
+            Percentage of Black or African American Population or Households
+            with Income under $10000 vs. percentage of Single Family Homes [For
+            Q2]
+            <br />Instead of using just raw counts, I plotted three ratios
+            together: nhaa/pop, incu10/pop, and (nhaa + incu10)/pop (where nhaa
+            = Non-Hispanic Black or African American population and incu10 =
+            households with income under $10,000). This allowed me to compare
+            the percentage of these groups versus different percentages of
+            single-family housing. I realized that (nhaa + incu10)/pop is not a
+            perfect measure because it may double count people who are both NHAA
+            and INCU10. However, since the recorded NHAA population is generally
+            low in many municipalities, I think this combined metric is still
+            fine for general data exploration. From this visualization, I
+            noticed a slight upward trend, with higher percentages of NHAA or
+            INCU10 residents appearing in areas where more than 50% of housing
+            is single-family. This is surprising, given the common argument that
+            single-family zoning prices out people of color and lower-income
+            residents.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="../images/assn2_graphs/race_income_wo_outliers.png"
+            alt=""
+            width="380"
+          />
+          <figcaption>
+            Percentage of Black or African American Population or Households
+            with Income under $10000 vs. percentage of Single Family Homes
+            (Without Outliers) [For Q2]
+            <br />
+            In this visualization, I filter out areas that have a percentage of
+            nhaa/pop or incu10/pop over 1, since that’s not possible. Through
+            closer checks, these areas have very small populations and large
+            populations of incu10, and I think that’s because of data
+            misentering. This allowed for a more useful y-axis.
+            <br />
+            Through this, you can more clearly see an upward trend, especially
+            for housing under 1000. Areas that have more than 40% of people
+            earning under $10000 are all in areas with more than 50%
+            single-family (other than areas with 0% single-family and Melrose).
+            I think this could make sense in the context of Massachusetts, since
+            it is a more liberal state that may better supports lower-income
+            people and people of color to live in these areas. People living in
+            Massachusetts are probably more well-off too since we are in a
+            generally more pricey area. 
+          </figcaption>
+        </figure>
+
+        <figure>
           <img
             src="../images/assn2_graphs/pop_vs_sing_fam_%25.png"
             alt=""
             width="380"
           />
           <figcaption>
-            Population vs. percentage of single-family homes.
+            Population vs. Percentage of Single Family Homes (By MBTA Community
+            Status) [For Q3]
+            <br />
+
+            In this figure, blue is MBTA communities, while red is non-MBTA
+            communities. MBTA communities are municipalities served by MBTA
+            transit and are required to allow multifamily housing in at least
+            one district (Credit:
+            <a
+              href="https://www.mass.gov/info-details/multi-family-zoning-requirement-for-mbta-communities"
+              >mass.gov</a
+            >). Most municipalities in the dataset are MBTA communities.
+            <br />
+            It looks like areas with a higher percentage of single-family
+            housing actually tend to have slightly higher populations overall.
+            In general, the areas with the highest populations (over 800) either
+            have 0% or around 60–90% single-family housing which is surprising.
+            I think this figure also does a great job showing that generally
+            most areas have a high percentage of single-family housing and also
+            a large populations.
+
+            <br />
+            I do wish this visualization can consider land area too, since some
+            smaller municipalities may be 100% single-family but can only
+            support a small population due to size constraints. Whether a
+            municipality is an MBTA community does not show a strong independent
+            trend, except that non-MBTA communities either have 0% or over 80%
+            single-family zoning. However some MBTA communities have low
+            populations while others have very high populations.
           </figcaption>
         </figure>
       </section>
@@ -117,7 +344,38 @@
       <section>
         <h2>Summary</h2>
 
-        <p>WRITE FINAL SUMMARY HERE.</p>
+        <p>
+          In general, I think this dataset allowed for great initial exploration
+          of how the percentage of single-family housing can affect the age,
+          race, income, and population count of the people living there.
+          However, I feel like there are some errors in data entry, specifically
+          in the case where the number of households earning under $10,000 is
+          higher than the total population. I also think land size is an
+          important context that can be added, since it affects how many people
+          an area can actually support.
+
+          <br />
+          <br />
+          More specifically, I learned that people over 65 generally do live in
+          areas with a higher percentage of single-family housing, which aligns
+          with my experiences growing up in Florida, where many retired people
+          tend to live in larger, single-family homes. It was interesting to
+          look more closely at cities like Boston, Medford, and Quincy to better
+          understand why their values fall outside the general trend, though. I
+          was surprised that there was not a clearer trend showing a higher
+          number of people of color or lower-income residents in areas with less
+          single-family housing. I think this could be explored further by
+          comparing the number of people earning different income levels across
+          varying percentages of single-family housing.
+          <br />
+          <br />
+          It is also surprising that areas with larger populations generally
+          have higher percentages of single-family homes. These realizations
+          seem to counter the ideas supported by the readings. It was also
+          interesting to see that whether a place is or is not an MBTA community
+          does not really seem to strongly affect the number of people living
+          there.
+        </p>
       </section>
     </main>
   </body>
